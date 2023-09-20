@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Enter the city name" spellcheck="false">
+            <button><img src="./assets/images/search.png" alt="search icon"></button>
+        </div>
+        <!-- to check error -->
+        <div class="error-box">
+            <p>City not found</p>
+        </div>
+        <div class="weather-box">
+            <div class="weather-card">
+                <img src="./assets/images/snow.png" class="weather-img">
+                <h1><span class="temperature">32</span>°C</h1>
+                <h2 class="city-name">Las Veigas</h2>
+            </div>
+            <div class="weather-details">
+                <div class="content">
+                    <img src="./assets/images/humidity.png" alt="humidity">
+                    <div class="details">
+                        <p class="details-headline"><span class="humidity">90</span>%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="./assets/images/wind.png" alt="wind">
+                    <div class="details">
+                        <p class="details-headline"><span class="wind">10</span> km/hr</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
