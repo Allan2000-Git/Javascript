@@ -1,1 +1,1 @@
-![Screenshot (73)](https://github.com/Allan2000-Git/Javascript/assets/54631653/6e8c2aec-38b2-4863-b5f2-c89c38d5cca3)
+![Screenshot (73)](https://github.com/Allan2000-Git/Javascript/assets/54631653/d775db3a-5689-4c8e-8596-f21d726659f1)
