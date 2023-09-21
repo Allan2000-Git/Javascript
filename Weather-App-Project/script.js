@@ -1,5 +1,5 @@
 //create account and get the key
-const API_KEY = "0ebff05334be05dc6a2878d0eb2e89cc";
+const API_KEY = "YOUR_API_TOKEN";
 const API_URL = "https://api.openweathermap.org/data/2.5/weather?units=metric";
 
 const city = document.querySelector(".search-container input");
