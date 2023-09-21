@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', 'Helvetica Neue', Arial, Helvetica, sans, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg,#f7ba2c,#ea5459);
+    padding: 20px;
+}
+
+.todo-box{
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 1rem; 
+    /* position: absolute; */
+    /* top: 50%;
+    right: 50%;
+    transform: translate(50%,50%); */
+}
+
+/* div1 styling => title & logo */
+
+.div1{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.div1 h2{
+    background: -webkit-linear-gradient(45deg,#f7ba2c,#ea5459);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.div1 img{
+    width: 35px;
+    margin-left: 0.5rem;
+}
+
+/* div2 styling => input field & button */
+
+.div2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(239, 239, 239);
+    border-radius: 2rem;
+}
+
+.div2 input{
+    border: 0;
+    outline: 0;
+    flex: 1;
+    border-radius: 3rem;
+    background:transparent;
+    padding: 0.8rem 0.5rem 0.8rem 1.5rem;
+    font-size: 14px;
+}
+
+.div2 button{
+    padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+    border-radius: 3rem;
+    border: 0;
+    outline: 0;
+    background-color: #ff6836;
+    cursor: pointer;
+    /* position: relative;
+    right: 0%; */
+    color: white;
+    font-weight: 500;
+}
+
+/* tasks styling */
+.task-container{
+    margin-top: 1rem;
+    /* align-items: center; */
+}
+
+.task-container li{
+    list-style: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 1.2rem 0rem 0rem 3.5rem;
+    /* if user can select the text */
+    user-select: none; 
+    position: relative;
+}
+
+/* before completion */
+.task-container li::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-image: url(./assets/To-Do-Img/images/incomplete.png);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 1.25rem;
+    left: 0.6rem;
+}
+
+/* after completion */
+.task-container li.completed{
+    color: grey;
+    text-decoration: line-through;
+}
+
+.task-container li.completed::before{
+    background-image: url(./assets/To-Do-Img/images/completed.png);
+}
+
+ul li span{
+    text-align: center;
+    position: absolute;
+    top: 1.25rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 1.5px;
+    line-height: 1.8rem;
+}
+
+ul li span:hover{
+    background: #ff8860;
+    /* transition: all 0.5s ease-in-out; 
+     transform: scale(1.2, 1.2);  */
+     color: white;
+    
+    border-radius: 50%;
+}
