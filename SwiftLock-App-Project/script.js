@@ -8,7 +8,7 @@ const specialCharacters = "!@#$%^&*()_-=+[]{}<>~|\/?";
 
 const passwordLength = 8;
 
-const generatePassword = () => {
+const generatePassword = () => { 
     var password="";
 
     while(password.length < passwordLength){
