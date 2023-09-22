@@ -137,22 +137,12 @@ button img{
     }
 
     .password-box{
-        background-color: white;
         padding: 0.7rem 1rem;
-        border-radius: 0.3rem;
-        margin-top: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         max-width: 100%;
     }
 
     .password-box input{
-        border: none;
-        outline: none;
-        width: 100%;
         font-size: 0.9rem;
-        color: black;
     }
     
     .password-box img{
@@ -169,5 +159,29 @@ button img{
     button img{
         width: 1.3rem;
         margin-right: 0.7rem;
+    }
+}
+
+/* mobiles */
+@media screen and (min-width: 480px) and  (max-width: 768px){
+    .container{
+        width: 100%;
+        margin-top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin: 25% auto; */
+    }
+
+    h1{
+        font-size: 3,5rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .password-box{
+        padding: 0.7rem 1rem;
+        max-width: 100%;
     }
 }
