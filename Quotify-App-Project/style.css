@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #B9F5D8;
+    font-family: 'Lora', serif;
+}
+
+.container{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 3rem 5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px #cbcbcb;
+    width: 800px;
+}
+
+.quote{
+    margin-top: 5rem;
+}
+
+h2{
+    font-size: 2rem;
+    position: relative;
+}
+
+.container h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #141B41;
+    width: 15%;
+    height: 0.2rem;
+    bottom: -0.5rem;
+}
+
+.quote blockquote::before, .quote blockquote::after{
+    content: '"';
+}
+
+.quote blockquote{
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.quote span{
+    float: right;
+    position: relative;
+    /* margin-left: 0.5rem; */
+}
+
+.quote span::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    background-color: #141B41;
+    width: 30px;
+    height: 0.15rem;
+    top: 50%;
+    left: -2.5rem;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    width: 100%;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0075F2;
+    outline: none;
+    border: none;
+    border-radius:5rem;
+    padding:0.9rem 2rem;
+    color: white;
+    margin: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+img{
+    width: 14px;
+    margin-right: 0.5rem;
+}
+
+button:nth-child(2){
+    background: transparent;
+    border: 1px solid black;
+    border-radius:5rem;
+    color: black;
+    /* font-weight: bold; */
+    
+}
