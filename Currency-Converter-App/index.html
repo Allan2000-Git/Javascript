@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css">
+    <script src="./script.js"></script>
+    <title>Currency Converter App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form id="form">
+            Enter the amount
+            <input type="number" name="amount" id="amount"> <br><br><br>
+            Choose the currency
+            <select name="currency" id="currency">
+                <option value="inr" selected>INR</option>
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+            </select>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Currency</th>
+                <th>Code</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfreds</td>
+                <td>Maria</td>
+                <td>Germany</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

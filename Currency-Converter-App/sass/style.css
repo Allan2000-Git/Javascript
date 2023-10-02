@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Helvetica Neue", Arial, Helvetica, sans, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.container {
+  width: 600px;
+  background: #A1D2CE;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+}
+
+.container form input {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.container form select {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.container form select::after {
+  margin-right: 2rem;
+}
+
+.container form input[type=submit] {
+  background: #5497A7;
+  margin-top: 3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+}
+
+.container form input[type=submit]:hover {
+  background: #50858B;
+}
+
+select::-moz-selection {
+  border: 0;
+  outline: 0;
+}
+
+.container input:focus, select:focus, select::selection {
+  border: 0;
+  outline: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+  color: #484041;
+  margin-top: 0;
+}
+
+.container form {
+  margin-top: 2rem;
+}
+
+option:hover {
+  background-color: #A1D2CE;
+}/*# sourceMappingURL=style.css.map */
