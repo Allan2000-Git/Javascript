@@ -25,7 +25,7 @@ body {
   border-radius: 0.7rem;
 }
 
-.container form input {
+.container input {
   padding: 0.7rem 1rem;
   width: 100%;
   border: 0;
@@ -35,7 +35,7 @@ body {
   border-radius: 0.5rem;
 }
 
-.container form select {
+.container select {
   padding: 0.7rem 1rem;
   width: 100%;
   border: 0;
@@ -45,11 +45,11 @@ body {
   border-radius: 0.5rem;
 }
 
-.container form select::after {
+.container select::after {
   margin-right: 2rem;
 }
 
-.container form input[type=submit] {
+.container input[type=submit] {
   background: #5497A7;
   margin-top: 3rem;
   cursor: pointer;
@@ -57,7 +57,7 @@ body {
   color: white;
 }
 
-.container form input[type=submit]:hover {
+.container input[type=submit]:hover {
   background: #50858B;
 }
 
@@ -91,4 +91,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 option:hover {
   background-color: #A1D2CE;
+}
+
+table, thead, tbody, tr, td {
+  padding: 1rem;
+  text-align: center;
+  width: 70vw;
 }/*# sourceMappingURL=style.css.map */
